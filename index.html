@@ -12,13 +12,36 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
         <script src="js/vendor/modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/handlebars.js"></script>
+        <script src="js/vendor/menu.js"></script>
+        <script src="js/vendor/underscore.js"></script>
+        <script src="js/vendor/backbone.js"></script>
     </head>
     <body>
-
-        <p>Jewerly Stocktaking</p>
-
+        <script id="main-page-template" type="text/x-handlebars-template">
+            <div class="title-div">
+                <h1>{{ jewerly.title }}</h1>
+            </div>
+        </script>
+        <script id="products-template" type="text/x-handlebars-template">
+            <h2 class="page-header text-center">{{ jewerly.products_list }}</h2>
+            <ul class="products-container"></ul>
+        </script>
+        <div id="header"></div>
+        <div class="menu"></div>
+        <div id="content"></div>
+        <div id="productInfo"></div>
+        <div class="main-products-container"></div>
+        <script src="js/jewerly.js"></script>
+        <script src="js/util.js"></script>
+        <script src="js/views/menu.js"></script>
+        <script src="js/views/productView.js"></script>
+        <script src="js/models/product.js"></script>
+        <script src="js/collections/products.js"></script>
+        <script src="js/views/products.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
